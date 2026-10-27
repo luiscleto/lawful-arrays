@@ -7,7 +7,8 @@ load or store; Base states no laws about it. These laws describe `Array.new`, `A
 perfect trees (what `Array.new` makes and every operation keeps) of depth below 32.
 
 Status: the laws (`LAWS.bend`, definitions in `defs.bend`) were reviewed in two rounds by Claude,
-GPT and Grok (`reviews/`). Proofs are next.
+GPT and Grok (`reviews/`), and all 21 are proven (`PROOF.bend`): `./check.sh` checks them with
+`bend` and with the Lean-proven kernel (`--verdict`).
 
 `bend test/spot.bend` evaluates both sides of the laws on small arrays.
 
