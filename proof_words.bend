@@ -1,8 +1,8 @@
 import Base
-import ../lawful-words/proof_nat.bend as WN
-import ../lawful-words/proof_u32.bend as WU
+import lawful-words@0.1.0.0/proof_nat.bend as WN
+import lawful-words@0.1.0.0/proof_u32.bend as WU
 
-# The U32 and Nat facts the index proofs need, from ../lawful-words, where
+# The U32 and Nat facts the index proofs need, from lawful-words (BendHub), where
 # they are laws (proof_u32.bend and proof_nat.bend restate them with every
 # variable reusable). w_shln_fits is to_nat_shln_fits with 2^32 written as
 # Nat.pow(2n, 32n): the law's D.two32() cannot be checked (lawful-words
