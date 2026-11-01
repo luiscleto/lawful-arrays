@@ -7,6 +7,8 @@ code built on it can be proven by reasoning about a list.
 
 ## Use
 
+Bend fetches these imports from [BendHub](https://hub.bend-lang.com/name/lawful-arrays) by name:
+
 ```python
 import lawful-arrays@0.1.0.0/defs.bend as A    # view, full, slot: what the laws talk about
 import lawful-arrays@0.1.0.0/LAWS.bend as L    # the laws, to use in your own proofs
