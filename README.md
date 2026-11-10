@@ -10,16 +10,16 @@ code built on it can be proven by reasoning about a list.
 Bend fetches these imports from [BendHub](https://hub.bend-lang.com/name/lawful-arrays) by name:
 
 ```python
-import lawful-arrays@0.1.0.0/defs.bend as A    # view, full, slot: what the laws talk about
-import lawful-arrays@0.1.0.0/LAWS.bend as L    # the laws, to use in your own proofs
-import lawful-arrays@0.1.0.0/PROOF.bend as P   # their proofs, needed whenever you use a law
+import lawful-arrays@0.1.0.1/defs.bend as A    # view, full, slot: what the laws talk about
+import lawful-arrays@0.1.0.1/LAWS.bend as L    # the laws, to use in your own proofs
+import lawful-arrays@0.1.0.1/PROOF.bend as P   # their proofs, needed whenever you use a law
 ```
 
 Counting how often each value 0..7 occurs, in an array of 8 counters:
 
 ```python
 import Base
-import lawful-arrays@0.1.0.0/defs.bend as A
+import lawful-arrays@0.1.0.1/defs.bend as A
 
 def bump.fin(+i: U32, an: Array<U32> & U32) -> Array<U32>:
   (a, n) = an
@@ -71,7 +71,7 @@ def write_read(a: Array<U32>, i: U32, v: U32)
 ```
 
 The laws are proven. Below version 1.0 they have been reviewed by AI models but not yet by a human
-expert. [docs/LAWS.md](docs/LAWS.md) lists them all in plain words.
+expert. [docs/LAWS.md](https://github.com/luiscleto/lawful-arrays/blob/main/docs/LAWS.md) lists them all in plain words.
 
 ## License
 

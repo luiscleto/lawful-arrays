@@ -1,6 +1,6 @@
 import Base
-import lawful-words@0.1.0.0/proof_nat.bend as WN
-import lawful-words@0.1.0.0/proof_u32.bend as WU
+import lawful-words@0.1.0.1/proof_nat.bend as WN
+import lawful-words@0.1.0.1/proof_u32.bend as WU
 
 # The U32 and Nat facts the index proofs need, from lawful-words (BendHub), where
 # they are laws (proof_u32.bend and proof_nat.bend restate them with every
